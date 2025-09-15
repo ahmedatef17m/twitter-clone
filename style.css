@@ -28,6 +28,7 @@ header {
   width: 29%;
   height: 100%;
   position: fixed;
+  z-index: 999;
 }
 .nav-links {
   display: flex;
@@ -80,7 +81,7 @@ header {
 .main-account {
   width: 100%;
   height: 30%;
-  padding-top: 145px;
+  padding-top: 130px;
 }
 .main-account a {
   display: flex;
@@ -374,7 +375,7 @@ main {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1024px) {
   header {
     width: 10%;
     padding: 10px 0;
@@ -387,12 +388,9 @@ main {
   }
   header .tweet {
     width: 55px;
+    height: 55px;
     border-radius: 50%;
     font-size: 1.4rem;
-  }
-  header .main-account {
-    display: flex;
-    justify-content: center;
   }
   header .account-details {
     display: none;
@@ -405,6 +403,46 @@ main {
   }
   .nav-links a,
   .main-account a {
-    padding: 10px 10px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 902px) {
+  header {
+    width: 6.5%;
+    margin-left: 4px;
+  }
+  header .tweet {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    padding: 0;
+  }
+  .main-feed {
+    width: 100%;
+    padding-left: 20px;
+    margin-right: 60px;
+  }
+  .side-feed {
+    width: 100%;
+    margin-left: 2px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .item-category {
+    justify-content: stretch;
+    gap: 6px;
+  }
+  .follow .h1-title {
+    font-size: 1.7rem;
+  }
+  .follow-container {
+    width: 100%;
+  }
+  .follow-profile {
+    width: 100%;
+    display: flex;
   }
 }
